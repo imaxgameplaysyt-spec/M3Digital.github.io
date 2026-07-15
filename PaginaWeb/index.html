@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M3 Digital — Webs y automatizaciones para negocios reales</title>
+  <meta name="description" content="Diseño y construyo webs con WordPress y automatizaciones a medida para pymes y autónomos. Presupuestos claros, sin sorpresas. Alcalá de Henares y Meco, Madrid.">
+  <meta name="author" content="M3 Digital">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="M3 Digital — Webs y automatizaciones para negocios reales">
+  <meta property="og:description" content="Webs con WordPress y automatizaciones a medida para pymes y autónomos. Presupuestos claros, sin sorpresas.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://m3digital.dev/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="M3 Digital — Webs y automatizaciones para negocios reales">
+  <meta name="twitter:description" content="Webs con WordPress y automatizaciones a medida para pymes y autónomos.">
+  <meta name="twitter:image" content="assets/og-image.png">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://m3digital.dev/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="alternate icon" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ====== LOADING SCREEN ====== -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-logo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+      <path d="M4 20V8l8-4 8 4v12"/><path d="M9 20v-6h6v6"/>
+    </svg>
+    M3 <span style="color:var(--muted);font-weight:400;">DIGITAL</span>
+  </div>
+  <div class="loader-bar"></div>
+</div>
+
+
+<!-- ====== HEADER ====== -->
+<header>
+  <nav aria-label="Navegación principal">
+    <a href="#" class="logo" id="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" aria-hidden="true">
+        <path d="M4 20V8l8-4 8 4v12"/><path d="M9 20v-6h6v6"/>
+      </svg>
+      M3 <span class="logo-muted">DIGITAL</span>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navlinks">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="navlinks" id="navlinks" role="navigation">
+      <a href="#servicios">Servicios</a>
+      <a href="#proyecto">Proyecto</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+</header>
+
+
+<!-- ====== MAIN CONTENT ====== -->
+<main>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="hero">
+    <div class="reg tl" aria-hidden="true"></div>
+    <div class="reg tr" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="eyebrow">Plano 01 — Presentación</p>
+      <h1>La web de tu negocio necesita <span class="hl">cimientos</span>, no solo una fachada.</h1>
+      <p class="lead">Diseño y construyo webs con WordPress y automatizaciones a medida para pymes y autónomos. Nada de plantillas genéricas: cada proyecto se levanta con una estructura pensada para durar.</p>
+      <div class="cta-row">
+        <a href="#contacto" class="btn btn-primary" id="cta-presupuesto">Pedir presupuesto</a>
+        <a href="#proyecto" class="btn btn-ghost" id="cta-proyecto">Ver proyecto real</a>
+      </div>
+
+      <!-- Blueprint browser mockup -->
+      <div class="plan-figure" aria-hidden="true">
+        <svg class="plan-svg" viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg">
+          <!-- Browser frame -->
+          <rect x="60" y="20" width="780" height="300" rx="2" fill="none" stroke="var(--line)" stroke-width="1.5" class="draw"/>
+          <line x1="60" y1="56" x2="840" y2="56" stroke="var(--line)" stroke-width="1" class="draw"/>
+          <circle cx="82" cy="38" r="4" fill="none" stroke="var(--line)" stroke-width="1.2"/>
+          <circle cx="98" cy="38" r="4" fill="none" stroke="var(--line)" stroke-width="1.2"/>
+          <circle cx="114" cy="38" r="4" fill="none" stroke="var(--line)" stroke-width="1.2"/>
+          <!-- Content blocks -->
+          <rect x="90" y="80" width="300" height="60" fill="none" stroke="var(--line)" stroke-width="1" class="draw draw2"/>
+          <rect x="410" y="80" width="400" height="60" fill="none" stroke="var(--accent)" stroke-width="1.2" class="draw draw2"/>
+          <rect x="90" y="160" width="230" height="130" fill="none" stroke="var(--line)" stroke-width="1" class="draw draw3"/>
+          <rect x="335" y="160" width="230" height="130" fill="none" stroke="var(--line)" stroke-width="1" class="draw draw3"/>
+          <rect x="580" y="160" width="230" height="130" fill="none" stroke="var(--line)" stroke-width="1" class="draw draw3"/>
+          <!-- Dimension lines -->
+          <line x1="60" y1="340" x2="840" y2="340" class="dim-line"/>
+          <line x1="60" y1="334" x2="60" y2="346" class="dim-line"/>
+          <line x1="840" y1="334" x2="840" y2="346" class="dim-line"/>
+          <text x="450" y="362" text-anchor="middle" class="dim-label">ANCHO — 100% RESPONSIVE</text>
+          <text x="240" y="105" text-anchor="middle" class="dim-label">CABECERA</text>
+          <text x="610" y="105" text-anchor="middle" class="dim-label">FORMULARIO → CRM / WHATSAPP</text>
+          <text x="205" y="230" text-anchor="middle" class="dim-label">SERVICIOS</text>
+          <text x="450" y="230" text-anchor="middle" class="dim-label">PROYECTOS</text>
+          <text x="695" y="230" text-anchor="middle" class="dim-label">CONTACTO</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====== SERVICIOS ====== -->
+  <section class="sheet" id="servicios">
+    <div class="wrap reveal">
+      <div class="sheet-header">
+        <p class="sheet-num">Hoja 01 — Servicios</p>
+        <h2>Tres formas de trabajar juntos, sin sorpresas en el presupuesto.</h2>
+        <p class="sheet-sub">Paquetes cerrados, precios claros desde el principio. Si necesitas algo distinto, lo ajustamos, pero siempre partiendo de una base concreta.</p>
+      </div>
+      <div class="legend reveal-stagger">
+        <div class="legend-row">
+          <div class="legend-symbol">W</div>
+          <div class="legend-body">
+            <h3>Web básica</h3>
+            <p>Landing o web de 1 a 5 páginas en WordPress. Diseño propio, sin plantillas genéricas, optimizada para que se lea bien desde el móvil.</p>
+          </div>
+          <div class="legend-price">300–500€<span>proyecto único</span></div>
+        </div>
+        <div class="legend-row">
+          <div class="legend-symbol">A</div>
+          <div class="legend-body">
+            <h3>Web + Automatización</h3>
+            <p>Todo lo anterior más una integración a medida: formulario conectado a un CRM, WhatsApp Business, o gestión automática de reservas/facturas.</p>
+          </div>
+          <div class="legend-price">600–1000€<span>proyecto único</span></div>
+        </div>
+        <div class="legend-row">
+          <div class="legend-symbol">M</div>
+          <div class="legend-body">
+            <h3>Mantenimiento</h3>
+            <p>Hosting, actualizaciones de seguridad y cambios pequeños de contenido. La web sigue funcionando y creciendo sin que tengas que preocuparte de nada técnico.</p>
+          </div>
+          <div class="legend-price">30–60€<span>al mes</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====== PROYECTO ====== -->
+  <section class="sheet alt" id="proyecto">
+    <div class="wrap reveal">
+      <div class="sheet-header">
+        <p class="sheet-num">Hoja 02 — Obra realizada</p>
+        <h2>Migración a WordPress para una federación deportiva regional.</h2>
+        <p class="sheet-sub">Caso real, no un ejercicio de curso.</p>
+      </div>
+      <div class="spec-grid">
+        <div class="spec-card reveal reveal-left">
+          <span class="tag">Caso real</span>
+          <h3>De web estática a WordPress a medida</h3>
+          <p>Migración completa de una web estática a un theme de WordPress construido desde cero, con tipos de contenido personalizados para gestionar torneos, clubes y noticias sin tocar código cada vez que hay que publicar algo.</p>
+          <p class="note-box">Detalles del cliente disponibles bajo petición — se muestran de forma general por confidencialidad hasta confirmar permiso de publicación.</p>
+        </div>
+        <div class="spec-card reveal reveal-right">
+          <span class="tag">Ficha técnica</span>
+          <ul class="spec-list">
+            <li><span>Tipo de proyecto</span><span>Migración web estática → WordPress</span></li>
+            <li><span>Contenido dinámico</span><span>Custom Post Types</span></li>
+            <li><span>Integración</span><span>WordPress REST API</span></li>
+            <li><span>Compatibilidad</span><span>Resolución de conflictos de plugins y CSS</span></li>
+            <li><span>Contexto</span><span>Proyecto de prácticas (FCT) en producción</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====== PROCESO ====== -->
+  <section class="sheet" id="proceso">
+    <div class="wrap reveal">
+      <div class="sheet-header">
+        <p class="sheet-num">Hoja 03 — Proceso</p>
+        <h2>Cuatro fases, siempre en el mismo orden.</h2>
+        <p class="sheet-sub">Cada fase depende de la anterior — por eso van numeradas, no es decoración.</p>
+      </div>
+      <div class="phases reveal-stagger">
+        <div class="phase">
+          <p class="phase-num">01</p>
+          <h4>Briefing</h4>
+          <p>Hablamos de qué necesita tu negocio de verdad, no de lo que "queda bien". 30 minutos, sin tecnicismos.</p>
+        </div>
+        <div class="phase">
+          <p class="phase-num">02</p>
+          <h4>Plano</h4>
+          <p>Propuesta cerrada con estructura de la web, precio y plazos por escrito antes de empezar.</p>
+        </div>
+        <div class="phase">
+          <p class="phase-num">03</p>
+          <h4>Construcción</h4>
+          <p>Desarrollo con avances visibles cada semana, no un silencio hasta la entrega final.</p>
+        </div>
+        <div class="phase">
+          <p class="phase-num">04</p>
+          <h4>Entrega y mantenimiento</h4>
+          <p>Web publicada, formación básica para que la manejes, y opción de mantenimiento mensual.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====== SOBRE MÍ ====== -->
+  <section class="sheet alt" id="sobre-mi">
+    <div class="wrap reveal">
+      <div class="sheet-header">
+        <p class="sheet-num">Hoja 04 — Quién soy</p>
+        <h2>La persona detrás de los planos.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="reveal reveal-left">
+          <div class="about-avatar" aria-hidden="true">M3</div>
+          <div class="about-text">
+            <h3>Desarrollo web y automatización para negocios que funcionan.</h3>
+            <p>No soy una agencia con diez capas de intermediarios. Soy una persona que trabaja directamente contigo, entiende tu negocio y construye herramientas digitales que resuelven problemas reales.</p>
+            <p>Especializado en WordPress, integraciones con CRMs, WhatsApp Business y automatizaciones que ahorran tiempo y errores.</p>
+          </div>
+          <div class="about-stats">
+            <div class="about-stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Trato directo</span>
+            </div>
+            <div class="about-stat">
+              <span class="stat-num">&lt;24h</span>
+              <span class="stat-label">Respuesta</span>
+            </div>
+            <div class="about-stat">
+              <span class="stat-num">0</span>
+              <span class="stat-label">Plantillas</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-tech reveal reveal-right">
+          <h4>Stack técnico</h4>
+          <div class="tech-tags">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">HTML / CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">WooCommerce</span>
+            <span class="tech-tag">Elementor</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">n8n</span>
+            <span class="tech-tag">Make</span>
+            <span class="tech-tag">WhatsApp API</span>
+            <span class="tech-tag">SEO técnico</span>
+            <span class="tech-tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====== FAQ ====== -->
+  <section class="sheet" id="faq">
+    <div class="wrap reveal">
+      <div class="sheet-header">
+        <p class="sheet-num">Hoja 05 — Preguntas frecuentes</p>
+        <h2>Lo que suelen preguntar antes de empezar.</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item" id="faq-1">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+            <span>¿Cuánto tarda en estar lista mi web?</span>
+            <svg class="faq-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="10" y1="4" x2="10" y2="16"/><line x1="4" y1="10" x2="16" y2="10"/>
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq-answer-1" role="region">
+            <div class="faq-answer-inner">
+              Depende del proyecto, pero una web básica suele estar lista en 2–3 semanas. Si incluye automatizaciones, unas 3–5 semanas. Siempre con avances visibles cada semana, no un silencio hasta el final.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-2">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+            <span>¿Necesito saber algo de tecnología para gestionar la web?</span>
+            <svg class="faq-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="10" y1="4" x2="10" y2="16"/><line x1="4" y1="10" x2="16" y2="10"/>
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq-answer-2" role="region">
+            <div class="faq-answer-inner">
+              No. Al entregar la web te doy una formación básica para que puedas actualizar textos e imágenes tú mismo. Si prefieres no tocar nada, el plan de mantenimiento cubre esos cambios.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-3">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+            <span>¿Qué pasa si ya tengo una web y quiero mejorarla?</span>
+            <svg class="faq-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="10" y1="4" x2="10" y2="16"/><line x1="4" y1="10" x2="16" y2="10"/>
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq-answer-3" role="region">
+            <div class="faq-answer-inner">
+              Primero analizo lo que tienes. Si se puede mejorar sin rehacerla, te propongo cambios concretos con precio cerrado. Si la base no funciona, te lo digo con honestidad y te presupuesto una nueva.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-4">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+            <span>¿Incluye hosting y dominio?</span>
+            <svg class="faq-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="10" y1="4" x2="10" y2="16"/><line x1="4" y1="10" x2="16" y2="10"/>
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq-answer-4" role="region">
+            <div class="faq-answer-inner">
+              El hosting puede estar incluido en el plan de mantenimiento mensual. El dominio lo registras tú (te guío si no sabes cómo) para que siempre sea tuyo, no dependa de nadie.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-5">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+            <span>¿Trabajas solo con negocios de Madrid?</span>
+            <svg class="faq-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="10" y1="4" x2="10" y2="16"/><line x1="4" y1="10" x2="16" y2="10"/>
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq-answer-5" role="region">
+            <div class="faq-answer-inner">
+              No. Trabajo 100% en remoto, así que puedo trabajar con negocios de cualquier parte de España. Las reuniones las hacemos por videollamada, sin necesidad de desplazamientos.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====== CONTACTO ====== -->
+  <section class="sheet alt" id="contacto">
+    <div class="wrap reveal">
+      <div class="sheet-header">
+        <p class="sheet-num">Hoja 06 — Contacto</p>
+        <h2>Cuéntame qué necesita tu negocio.</h2>
+        <p class="sheet-sub">Respondo en menos de 24h. Sin compromiso, la primera conversación es para entender el proyecto, no para venderte nada.</p>
+      </div>
+      <div class="contact-grid">
+        <!-- Contact form -->
+        <form class="contact-form" id="contact-form" action="https://formsubmit.co/m3.digital.pages@gmail.com" method="POST" novalidate>
+          <!-- FormSubmit.co config -->
+          <input type="hidden" name="_subject" value="Nuevo contacto desde M3 Digital">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Nombre</label>
+              <input type="text" id="contact-name" name="nombre" required minlength="2" placeholder="Tu nombre">
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" required placeholder="tu@email.com">
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-service">¿Qué te interesa?</label>
+            <select id="contact-service" name="servicio" required>
+              <option value="" disabled selected>Elige una opción</option>
+              <option value="web-basica">Web básica (300–500€)</option>
+              <option value="web-automatizacion">Web + Automatización (600–1000€)</option>
+              <option value="mantenimiento">Mantenimiento mensual (30–60€)</option>
+              <option value="otro">Otro / No estoy seguro</option>
+            </select>
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Cuéntame sobre tu proyecto</label>
+            <textarea id="contact-message" name="mensaje" required minlength="10" placeholder="¿Qué necesita tu negocio? ¿Tienes web actualmente? ¿Qué quieres conseguir?"></textarea>
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit" id="contact-submit">
+            <span class="btn-text">Enviar mensaje</span>
+            <span class="btn-loading"><span class="spinner"></span></span>
+            <span class="btn-success">✓ Mensaje enviado</span>
+          </button>
+          <span class="form-error form-submit-error" aria-live="polite"></span>
+          <p style="font-size:0.78rem;color:var(--muted);margin-top:14px;">Al enviar este formulario aceptas la <a href="privacidad.html" style="color:var(--accent);">política de privacidad</a>.</p>
+        </form>
+
+        <!-- Contact info -->
+        <div class="contact-info">
+          <a href="mailto:m3.digital.pages@gmail.com" class="contact-link" id="link-email">
+            <span>
+              m3.digital.pages@gmail.com
+              <span class="k">EMAIL</span>
+            </span>
+            <span class="arrow">→</span>
+          </a>
+          <a href="https://wa.me/34690876730" class="contact-link" id="link-whatsapp" target="_blank" rel="noopener noreferrer">
+            <span>
+              WhatsApp
+              <span class="k">RESPUESTA RÁPIDA</span>
+            </span>
+            <span class="arrow">→</span>
+          </a>
+          <p class="contact-note">Respondo en menos de 24 horas. Si es urgente, escríbeme por WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <p>M3 DIGITAL — Webs y automatizaciones · Alcalá de Henares / Meco, Madrid</p>
+  <p style="margin-top:8px;"><a href="privacidad.html" style="color:var(--muted);">Privacidad</a> · <a href="cookies.html" style="color:var(--muted);">Cookies</a></p>
+</footer>
+
+
+<!-- ====== WHATSAPP FLOATING BUTTON ====== -->
+<a href="https://wa.me/34690876730" class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+
+<!-- ====== BACK TO TOP BUTTON ====== -->
+<button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+    <path d="M12 19V5M5 12l7-7 7 7"/>
+  </svg>
+</button>
+
+
+<!-- ====== COOKIE BANNER ====== -->
+<div class="cookie-banner" id="cookie-banner" role="alert">
+  <div class="cookie-inner">
+    <p class="cookie-text">
+      Este sitio usa cookies propias para mejorar tu experiencia. No se comparten datos con terceros.
+      Más info en la <a href="cookies.html" style="color:var(--accent);">política de cookies</a> y la <a href="privacidad.html" style="color:var(--accent);">política de privacidad</a>.
+    </p>
+    <div class="cookie-actions">
+      <button class="btn-cookie btn-cookie-reject" id="cookie-reject">Rechazar</button>
+      <button class="btn-cookie btn-cookie-accept" id="cookie-accept">Aceptar</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ====== JAVASCRIPT ====== -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
